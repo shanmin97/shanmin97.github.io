@@ -64,7 +64,7 @@
 
           function checkLoginState() {
             FB.getLoginStatus(function(response) {
-              FB.api('me/likes', function(res) {
+              FB.api('me/likes',function(res) {
                 for(i = 0; i < res.data.length; i++){
                   document.getElementById('list').innerHTML += res.data[i].name
                 }
