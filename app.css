@@ -1,0 +1,82 @@
+body
+      .title-bg{
+        background-color: pink;
+        font-family:華康超明體;
+        font-size:25px;
+      }
+
+      .my-font-bigger{
+        font-size:30px;
+        font-weight: bold;
+      }
+
+      .my-font1{
+        text-decoration: underline;
+      }
+      .my-font2{
+        text-decoration: line-through;
+      }
+      .my-font3{
+        text-decoration: overline;
+      }
+
+      .my-font4{
+        word-spacing: 10px;
+      }
+
+      .my-font5{
+        line-height: 60px;
+      }
+
+      .my-class{
+        border:1px solid red;
+        width:200px;
+        height:300px;
+      }
+      .my-class2{
+        padding-top: 10px;
+        padding-right:50px;
+        padding-bottom:30px;
+        padding-left:50px;
+      }
+
+      .position-relative{
+        position:relative;
+        left:200px;
+        bottom:80px;
+      }
+
+      .position-fixed{
+        position fixed;
+        left:200px;
+        top:50px;11111
+      }
+
+      .box-a{
+        background-color:#aa006a;
+        position: absolute;
+        left:0px;
+        top:0px;
+        border:1px solid red;
+      }
+
+      .box-b{
+        background-color:#df1191;
+        position: absolute;
+        left:150px;
+        top:0px;
+        border:1px solid red;
+      }
+
+      <style media="screen">
+        .my-class{
+          background-color: yellow;
+        }
+
+        .my-class:hover{
+          font-size: 30px;
+          background-color: pink;
+        }
+      </style>
+
+</body>

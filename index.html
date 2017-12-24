@@ -1,0 +1,82 @@
+<html>
+
+<head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body bgcolor="#e2caca">
+
+
+<fb:login-button
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
+<div class="alert alert-info" role="alert">
+  <h1> <font color="bc513f" >
+          <marquee direction="right"  scrollamount="15" behavior="alternate">歡迎來到我的網頁</marquee></font> </h1>
+</div>
+
+    <button type="button" class="btn btn-outline-info"><a href="me.html">關於我</button></a>
+    <button type="button" class="btn btn-outline-info">1</button>
+    <button type="button" class="btn btn-outline-info">2</button>
+    <button type="button" class="btn btn-outline-info">3</button>
+    <button type="button" class="btn btn-outline-info">4</button>
+    <button type="button" class="btn btn-outline-info">5</button><p>
+
+  <button onClick="想要認識我嗎？()">按我說hello </button><p>
+
+
+  <img src="photo.png" "height=150px, width=150px"> <br>
+
+
+<a href="test.html">TEST </a><br>
+
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '164605744296500',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.11'
+    });
+
+    FB.AppEvents.logPageView();
+
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+   function checkLoginState() {
+     FB.getLoginStatus(function(response) {
+       statusChangeCallback(response);
+     });
+   }
+
+</script>
+
+<script>
+    console.log("你好！");
+    function HEY() {
+          alert("想要認識我嗎？");
+    }
+</script>
+
+</body>
+
+
+<html/>
