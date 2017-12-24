@@ -61,15 +61,17 @@
    }(document, 'script', 'facebook-jssdk'));
 
 
-   function checkLoginState() {
-         FB.getLoginStatus(function(response) {
-           FB.api('me/likes', function(res) {
-             for (i = 0; i< res.data.lenght; i++){
-               document.getElementById('list')
-             console.log(res);
-           });
-         });
-       }
+
+          function checkLoginState() {
+            FB.getLoginStatus(function(response) {
+              FB.api('me/likes', function(res) {
+                for(i = 0; i < res.data.length; i++){
+                  document.getElementById('list').innerHTML += res.data[i].name
+                }
+              });
+
+            });
+          }
 
 </script>
 
