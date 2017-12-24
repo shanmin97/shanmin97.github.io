@@ -30,6 +30,15 @@
 <a href="test.html">TEST </a><br>
 
 
+
+
+<fb:login-button
+  scope="public_profile,email,user_likes"
+  onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="list">my likes</div>
+
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -62,13 +71,6 @@
        }
 
 </script>
-
-<fb:login-button
-  scope="public_profile,email,user_likes"
-  onlogin="checkLoginState();">
-</fb:login-button>
-
-<div class="list">my likes</div>
 
 <script>
     console.log("你好！");
