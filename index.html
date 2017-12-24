@@ -32,10 +32,7 @@
 
 
 
-<fb:login-button
-  scope="public_profile,email,user_likes"
-  onlogin="checkLoginState();">
-</fb:login-button>
+
 
 <div id="list">my likes</div>
 
@@ -60,8 +57,6 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 
-
-
           function checkLoginState() {
             FB.getLoginStatus(function(response) {
               FB.api('me/likes',function(res) {
@@ -74,6 +69,11 @@
           }
 
 </script>
+
+<fb:login-button
+  scope="public_profile,email,user_likes"
+  onlogin="checkLoginState();">
+</fb:login-button>
 
 <script>
     console.log("你好！");
